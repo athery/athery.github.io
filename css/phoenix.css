@@ -1,0 +1,429 @@
+/* Includes Bootstrap as well as some default style for the starter
+ * application. This can be safely deleted to start fresh.
+ */
+
+/* latin-ext */
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(https://fonts.gstatic.com/s/juliussansone/v6/1Pt2g8TAX_SGgBGUi0tGOYEga5WOzHsX2aE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(https://fonts.gstatic.com/s/juliussansone/v6/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsX.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWx8QDP2V.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNXaxMICA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body, form, ul, table {
+  margin-bottom: 20px;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+form, ul, table {
+  margin-top: 20px;
+}
+
+/* Phoenix flash messages */
+.alert:empty { display: none; }
+
+/* Custom page header */
+.header {
+  position: relative;
+  background-image: url("/images/jardin-header_light.jpg");
+  background-position: center;
+  text-align: center;
+  padding: 20px 0 80px 0;
+}
+
+.whoami {
+  padding: 30px 0;
+}
+
+.whoami h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+.whoami .calque {
+  padding: 10px;
+}
+
+.whoami .medal {
+  width: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.whoami p {
+  text-align: justify;
+}
+
+.ourwork {
+  padding-bottom: 40px;
+}
+
+.ourwork .title {
+  padding-bottom: 40px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 1.25rem;
+    color: #000;
+    background-color: #f0d1f5;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 0 5px;
+    font-size: 1em;
+}
+
+.nav-pills .nav-item {
+  width: 33%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #9124a3;
+}
+
+
+.nav-pills {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+  overflow: hidden;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.grid-item:hover img {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+.logo {
+  width: 175px;
+  height: 192px;
+  margin-bottom: 1em;
+  background-image: url("/images/logo.PNG");
+  background-size: 175px 192px;
+  display: block;
+  position: inherit;
+  left: 50%;
+  margin-left: -87px;
+}
+
+.header h1 {
+  padding: 50px 0px 30px 0px;
+  color: #fff;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 3.2em;
+  line-height: 0.8;
+  /*text-transform: uppercase;*/
+}
+.header h1>.baseline {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.5em;
+}
+
+.header h2 {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.8em;
+  padding-top: 1em;
+  color: #3c2424;
+  line-height: 1;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 35px 0;
+}
+
+.main {
+  position: relative;
+  margin: -50px 10px 0;
+  background: #fff;
+  border-radius: 6px;
+  z-index: 3;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+  padding-bottom: 20px;
+}
+
+.offers {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: 'Libre Baskerville', sans-serif;
+  /*font-style: italic;*/
+  font-size: 2.4em;
+  font-weight: normal;
+  padding: 40px 0;
+}
+
+.offer {
+  padding: 40px 10px 10px 10px;
+}
+
+.offer .icon{
+  font-size: 3.2em;
+}
+
+.offer h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.4em;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+
+.primary {
+  color: #4c9f50;
+}
+
+.secondary {
+  color: #00bcd4;
+}
+
+.tertiary {
+  color: #e91e63;
+}
+
+.quaternary {
+  color: #9124a3;
+}
+.usps li {
+  list-style:none;
+  font-family: sans-serif;
+}
+.usps li::before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  margin-right: 10px;
+  margin-left: -10px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e903";
+}
+
+.contact {
+  padding: 30px 0;
+  background-color: #9124a3;
+  color: #fff;
+}
+
+.contact .lead {
+  font-size: 1.4em;
+  line-height: 2;
+}
+
+.contact .email>a, .contact .phone {
+    color: #fff;
+}
+
+.footer {
+  margin-top: 30px
+}
+
+.copyright {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1em;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    padding: 50px 0 90px 0;
+  }
+
+  .header h1 {
+    line-height: 0.6;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .whoami {
+    background-image: url("/images/arnaud_verynarrow.jpg");
+    background-size: cover;
+    background-position: left;
+    padding: 30px;
+  }
+
+  .whoami h2 {
+    font-size: 3.2em;
+    margin-bottom: 40px;
+  }
+
+  .whoami .calque {
+      background-color: #000;
+      color: #fff;
+      opacity: 0.6;
+      padding: 20px;
+    }
+
+  .whoami p {
+      text-align: left;
+    }
+
+  .nav-pills .nav-link {
+      margin: 0 10px;
+      font-size: 1.5em;
+  }
+
+  .nav-pills {
+        width: 100%;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.33%;
+  }
+
+  .main {
+    margin: -50px 30px 0;
+    padding: 30px;
+  }
+
+  .offer {
+    padding: 0 50px;
+  }
+
+  .contact .lead {
+    font-size: 1.7em;
+    line-height: 2;
+  }
+
+  .contact a, .contact .phone {
+      /*padding: 10px 20px;*/
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .footer {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .whoami {
+    background-image: url("/images/arnaud_narrow.jpg");
+  }
+  .nav-pills {
+        width: 80%;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .whoami {
+    background-image: url("/images/arnaud_large.jpg");
+    padding: 60px;
+  }
+  .whoami .calque {
+    padding: 20px;
+  }
+  .nav-pills {
+      width: 50%;
+  }
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
+  }
+}
